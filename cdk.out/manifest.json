@@ -1,0 +1,535 @@
+{
+  "version": "1.33.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "MyShoppinglistBotStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "MyShoppinglistBotStack.template.json"
+      },
+      "metadata": {
+        "/MyShoppinglistBotStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421",
+              "id": "9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421",
+              "packaging": "zip",
+              "sourceHash": "9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421",
+              "s3BucketParameter": "AssetParameters9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421S3Bucket9BDCC2C8",
+              "s3KeyParameter": "AssetParameters9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421S3VersionKeyA27ADF9D",
+              "artifactHashParameter": "AssetParameters9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421ArtifactHash3718B836"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/construct-compat.ts:400:92)",
+              "MyShoppinglistBotStack.addFileAsset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/stack.ts:543:17)",
+              "new Asset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function.ts:488:29)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:14:32)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/Table/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableCD117FA1",
+            "trace": [
+              "new Table (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:669:18)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:10:19)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingLambdaServiceRole684BF125",
+            "trace": [
+              "new Role (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-iam/lib/role.ts:315:18)",
+              "new Function (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function.ts:478:31)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:14:32)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingLambdaServiceRoleDefaultPolicy9DE04336",
+            "trace": [
+              "new Policy (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-iam/lib/policy.ts:127:22)",
+              "Role.addToPolicy (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-iam/lib/role.ts:356:28)",
+              "Function.addToPrincipal (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-iam/lib/grant.ts:149:61)",
+              "Table.grant (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:358:22)",
+              "Table.grantFullAccess (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:450:17)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:35:11)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingLambda2FD183D5",
+            "trace": [
+              "new Function (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function.ts:493:35)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:14:32)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/AssetParameters/9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421S3Bucket9BDCC2C8",
+            "trace": [
+              "new FileAssetParameters (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "MyShoppinglistBotStack.addFileAsset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/stack.ts:530:16)",
+              "new Asset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function.ts:488:29)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:14:32)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/AssetParameters/9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421S3VersionKeyA27ADF9D",
+            "trace": [
+              "new FileAssetParameters (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "MyShoppinglistBotStack.addFileAsset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/stack.ts:530:16)",
+              "new Asset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function.ts:488:29)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:14:32)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/AssetParameters/9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9d44a50e49ab6285a7f3d30ddb2e2296914b9135f1922db8a2f929bcb7c38421ArtifactHash3718B836",
+            "trace": [
+              "new FileAssetParameters (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:36)",
+              "MyShoppinglistBotStack.addFileAsset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/core/lib/stack.ts:530:16)",
+              "new Asset (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:113:28)",
+              "AssetCode.bind (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/code.ts:179:20)",
+              "new Function (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function.ts:488:29)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:14:32)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApi2D1FE3C5",
+            "trace": [
+              "new RestApi (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:238:22)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:26:17)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiDeploymentFA3A646C2edc8a0066e1ceee2641f10e2e5ff26b",
+            "trace": [
+              "new Deployment (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:69:21)",
+              "RestApi.configureDeployment (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:408:32)",
+              "new RestApi (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:254:10)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:26:17)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiDeploymentStageprodDC124F87",
+            "trace": [
+              "new Stage (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:236:22)",
+              "RestApi.configureDeployment (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:418:30)",
+              "new RestApi (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:254:10)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:26:17)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiEndpointCF72809C",
+            "trace": [
+              "RestApi.configureDeployment (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:423:7)",
+              "new RestApi (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:254:10)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:26:17)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiCloudWatchRoleCA3342A7",
+            "trace": [
+              "new Role (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-iam/lib/role.ts:315:18)",
+              "RestApi.configureCloudWatchRole (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:432:18)",
+              "new RestApi (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:258:12)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:26:17)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiAccount7FC3BC64",
+            "trace": [
+              "RestApi.configureCloudWatchRole (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:437:22)",
+              "new RestApi (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:258:12)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:26:17)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/Default/POST/ApiPermission.MyShoppinglistBotStackLineShoppingApi66096FAA.POST..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiPOSTApiPermissionMyShoppinglistBotStackLineShoppingApi66096FAAPOST6F462AEE",
+            "trace": [
+              "Function.addPermission (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:212:5)",
+              "LambdaIntegration.bind (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:61:18)",
+              "Method.renderIntegration (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:229:17)",
+              "new Method (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:169:25)",
+              "RootResource.addMethod (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:33:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/Default/POST/ApiPermission.Test.MyShoppinglistBotStackLineShoppingApi66096FAA.POST..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiPOSTApiPermissionTestMyShoppinglistBotStackLineShoppingApi66096FAAPOST13ED3C1D",
+            "trace": [
+              "Function.addPermission (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:212:5)",
+              "LambdaIntegration.bind (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:69:20)",
+              "Method.renderIntegration (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:229:17)",
+              "new Method (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:169:25)",
+              "RootResource.addMethod (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:33:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/MyShoppinglistBotStack/LineShoppingApi/Default/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LineShoppingApiPOSTEC18574C",
+            "trace": [
+              "new Method (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:176:22)",
+              "RootResource.addMethod (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:175:12)",
+              "new MyShoppinglistBotStack (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/lib/my-shoppinglist-bot-stack.ts:33:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/bin/my-shoppinglist-bot.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Module.m._compile (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:836:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/index.ts:839:12)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/Users/naoyamatsuo/work/my-serverless-framework/work02/aws-typescript/my-shoppinglist-bot/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1157:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1177:10)",
+              "Module.load (internal/modules/cjs/loader.js:1001:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:900:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "/Users/naoyamatsuo/.nodebrew/node/v12.16.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.33.0",
+      "@aws-cdk/cx-api": "1.33.0",
+      "@aws-cdk/cloud-assembly-schema": "1.33.0",
+      "@aws-cdk/aws-dynamodb": "1.33.0",
+      "@aws-cdk/aws-applicationautoscaling": "1.33.0",
+      "@aws-cdk/aws-iam": "1.33.0",
+      "@aws-cdk/region-info": "1.33.0",
+      "@aws-cdk/aws-autoscaling-common": "1.33.0",
+      "@aws-cdk/aws-cloudwatch": "1.33.0",
+      "@aws-cdk/aws-cloudformation": "1.33.0",
+      "@aws-cdk/aws-lambda": "1.33.0",
+      "@aws-cdk/aws-ec2": "1.33.0",
+      "@aws-cdk/aws-ssm": "1.33.0",
+      "@aws-cdk/aws-logs": "1.33.0",
+      "@aws-cdk/aws-s3": "1.33.0",
+      "@aws-cdk/aws-events": "1.33.0",
+      "@aws-cdk/aws-kms": "1.33.0",
+      "@aws-cdk/aws-sqs": "1.33.0",
+      "@aws-cdk/aws-s3-assets": "1.33.0",
+      "@aws-cdk/assets": "1.33.0",
+      "@aws-cdk/custom-resources": "1.33.0",
+      "@aws-cdk/aws-apigateway": "1.33.0",
+      "jsii-runtime": "node.js/v12.16.0"
+    }
+  }
+}
